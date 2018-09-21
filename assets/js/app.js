@@ -1,39 +1,3 @@
-/** CONST vs LET vs VAR
- * CONST: constant waarde die je niet aanpast
- * LET: bij het opnieuw inbinden 
- * VAR: signaleert 'untouched' hergebruikte code
- */
-
-
-/* Programming Basics 
- * Les 3 - Variables
- */
-
-// lesopdrachten: variables uitprinten met strings
-
-const firstName = 'Miguela',
-    lastName = 'Temmar',
-    age = '20';
-
-    //console.log('Mijn naam is ' + firstName + 'mijn achternaam ' + lastName);
-    console.log(`Mijn naam is ${firstName} ${lastName} en ik ben ${age} jaar. `);
-
-// Som berekenen Hoeveel kosten deze apples
-const priceOfAnApple = 0.59,
-    numberOfApples = 200;
-let total = priceOfAnApple * numberOfApples;    
-
-console.log(`Totaalprijs is: ${total}`);
-
-// Vervang applied = mad
-const hzString = 'Please visit the HZ university of applied science.';
-console.log(hzString);
-
-const hzReplacedString = hzString.replace('applied', 'mad');
-console.log(hzReplacedString);
-
-// ---------------------------------------------------------------------
-
 /*
  * Eindopdrachten 1 t/m 3 Variables
  * Deadline: donderdag 20 september 2018
@@ -65,76 +29,6 @@ console.log('Vergelijk', number == string);
 
 // Waarom dit niet een slimme vraag is:
 // Omdat het 2 verschillende waardes zijn, er is een nummer aangegeven 
-
-// ---------------------------------------------------------------------
-
-/**
- * Les 4 - Conditionals 
- * if else
- */
-let today = new Date();
-console.log('The day is:' ,today.getDay());
-// Uitkomst is 2 omdat dinsdag de 2e dag is van de week
-
-// lesopdracht
-
-let currentAction = 'booleans';
-
-if (currentAction == 'calculating') {
-    console.log('in Calculating');
-
-    const a = 10;
-    const b = 11;
-    console.log('optellen', a + b);
-
-} else if(currentAction == 'strings'){
-    console.log('in Strings');
-    const myString = 'My beautiful string!';
-    console.log(myString.toUpperCase());
-    console.log('character at', myString.charAt(7));
-    console.log('lengte van de string', myString.length);
-    console.log('substring', myString.substr(3, 8));
-    
-} else if(currentAction == 'booleans'){
-    console.log('in Booleans');
-    // punten hoog genoeg --> if else
-
-    const c = 20;
-    if (c >= 30) {
-        console.log('true, boolean');
-    } else {
-        console.log('false, boolean');
-    }
-} else {
-    console.error('help');
-}
-
-// BMI = gewicht / lengte2
-
-const height = 1.89;
-const weight = 94;
-const bmi = Math.round(weight / (height*height)*10)/10;
-
-console.log(bmi, 'is de bmi');
-
-if (bmi < 18.5) {
-    console.log('Classificatie: ondergewicht');
-    console.log('Risico: laag (maar verhoogd risico op andere aandoeningen)');
-
-} else if (bmi >= 18.5 && bmi < 24,9) {
-    console.log('Classificatie: normaalgewicht');
-    console.log('Risico: gemiddeld');
-
-} else if (bmi >= 25 && bmi <= 29,9) {
-    console.log('Classificatie: overgewicht');
-    console.log('Risico: verhoogd');
-
-} else if (bmi >= 30) {
-    console.log('Classificatie: Obesitas');
-    console.log('Risico: duidelijk verhoogd');
-} else {
-    console.error('something went wrong!')
-}
 
 // ---------------------------------------------------------------------
 
@@ -204,5 +98,3 @@ if ( purchasedBook == true && inTrain == true && job == 'teacher') {
     console.log('I cannot enjoy my book :(');
 
 }
-
-// ---------------------------------------------------------------------
